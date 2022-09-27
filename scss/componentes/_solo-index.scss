@@ -1,14 +1,18 @@
 .localH {
-    justify-content: center;
+    overflow: hidden;
     grid-area: img-vid;
     margin: 10px;
     padding: 15px;
-    justify-items: center;
-    font-size: 100vw;    
+    
+    
+    & div {
+        float:none;
+    }
 }
 
 
 .div-nos {
+    overflow: hidden;  
     margin: 2px;
     padding: 5px;
     background-color: $bg-color-seis;
@@ -16,8 +20,7 @@
     flex-direction: column;
     align-items: center;
     grid-area: info;
-    max-width: 30vw;
-    max-height: 70vw;
+    max-height: min-content;
 
     & img {
         padding: 5px;        
@@ -25,7 +28,7 @@
     }
     & main {
         padding: 5px;
-        font-size: 1.4vw;
+        font-size: 2vw;
         color: $txt-color-tres;
     }
 }

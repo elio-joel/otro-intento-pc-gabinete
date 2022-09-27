@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
 body {
     background: $bg-color-uno;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,6 +12,7 @@ body {
 
 /*Inicio de nv y heder*/
 .primario {
+    float: none;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(1fr, 4);
@@ -27,7 +34,7 @@ body {
     grid-area: b-nav;
     font-size: 1.8vw;
     background: $bg-color-dos;
-    width: 85vw;
+    width: fit-content;
     justify-content: stretch;
     align-self: center;
 
@@ -54,7 +61,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 900%;
+    font-size: 15vw;
     border: 2px solid;
 
     a i {
@@ -64,8 +71,8 @@ body {
 
 .div-up {
     position: fixed;
-    bottom: 20%;
-    right: 90%;
+    bottom: 25vw;
+    right: 88vw;
     background-color: $bg-color-cuatro;
     text-decoration: none;
     margin: 2%;
@@ -76,16 +83,14 @@ body {
         color: $txt-color-dos
     }
 
-    &:hover {
-        background-color: $hv-color-dos;
-    }
+    
 
 }
 
 .div-wp {
     position: fixed;
-    bottom: 5%;
-    left: 87%;
+    bottom: 25vw;
+    left: 87vw;
     background-color: transparent;
     text-decoration: none;
     margin: 0.5%;
@@ -95,9 +100,7 @@ body {
     a {
         color: $txt-color-dos;
 
-        &:hover {
-            background-color: $hv-color-dos;
-        }
+    
     }
 }
 
