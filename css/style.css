@@ -217,9 +217,6 @@ body {
 footer {
   margin: 10px;
   padding: 5px;
-  /*background: $bg-color-uno;
-  height: 45vw;
-  width: 95vw;*/
   font-size: 2.5vw;
   display: flex;
   flex-direction: row;
@@ -268,6 +265,9 @@ footer iframe {
     max-width: 100vw;
     max-height: 70vw;
   }
+  .localH .div-carousel-img {
+    overflow: hidden;
+  }
   .claseRedes {
     margin: 2vw;
     padding: 0.5vh;
@@ -294,7 +294,7 @@ footer iframe {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: max-content;
+    height: fit-content;
     width: fit-content;
     font-size: 2.5vw;
   }
