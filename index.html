@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7d1eb9d6b3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>HomeStore</title>
+    <link rel="shortcut icon" href="./local/logo.jpg">
+</head>
+
+<body>
+    <div class="primario">
+        <header class="logo-tit" id="arriba">
+            <h1>
+                <img src="./local/logo.jpg" alt="Logo-home-store">
+                <p>HomeStore</p>
+
+            </h1>
+        </header>
+
+        <div class="navbar-rs">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#home">Home</a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#productos">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#redesSociales">Redes Sociales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Este es el inicio -->
+        <section class="localH" id="home">
+            <div class="div-carousel-img">
+                <div class="conteiner">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xs-12">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="2000">
+                                        <img src="./local/imagen-salon-1.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Local zona norte</h5>
+                                            <p>Visitanos de lunes a viernes de 08:00 a 13:00 hs.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="./local/imagen-salon-2.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Casa Central</h5>
+                                            <p>Tambien los dias sabados en el mismo horario</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="./local/imagen-salon-3.png" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Local zona sur</h5>
+                                            <p>De lunes a Sabados de 09:00 a 14:00 horas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="div-nos" id="nosotros">
+            <div class="row">
+                <div class="col-12 col-md-6 col-sm-12">
+                    <p class="texto-wp">Realiza tu pedido por WhatsApp en nunestro horario comercial
+                        haciendo click aca
+                        !</p>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="./local/giphy.gif"></a>
+                    <main>Somos una empresa nacida en la Ciudad de Santa Fe, con alcance nacional ya que
+                        brindamos
+                        envios a todo el pais. Tenemos amplia variedad en productos como: equipos de mates
+                        completos,
+                        adornos decorativos, articulos de perfumeria para el hogar como difusores, palo
+                        santo y mas...
+                        Tambien contamos con articulos de perfumeria y limpieza para autos. Hacemos grabados
+                        en mates
+                        personalizados de la forma que quieras, lamparas de sal, porta sahumerio y mas. Te
+                        invitamos a
+                        recorres nuestras secciones de productos aqui debajo.
+                    </main>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="claseRedes" id="redesSociales">
+
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+
+        <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+
+
+        <a href="https://twitter.com/login/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+
+
+    </div>
+    <section class="secProductos" id="productos">
+        <!--En la seccion productos, va a estar conformada con tres columnas como estan en el wireframe
+            con los nombres que se encuentran debajo mas una imagen iconica o de refencia a cada categoria asignada-->
+        <div class="divBazar">
+            <img src="./imagenes/bazar.png" class="img-b-r" alt="">
+            <a href="./bazar.html">Bazar</a>
+        </div>
+        <div class="divDeco">
+            <img src="./imagenes/deco.png" class="img-b-r" alt="">
+            <a href="./deco.html">Deco</a>
+        </div>
+        <div class="divHogar">
+            <img src="./imagenes/hogar.png" class="img-b-r" alt="">
+            <a href="./hogar.html">Hogar</a>
+        </div>
+    </section>
+
+    <!--<div class="div-up">
+        <a href="#arriba"><i class="fa-solid fa-arrow-up"></i></a>
+    </div> -->
+
+    <footer class="pie-inf" id="contacto"></footer>
+    <div class="form-contact">
+        <section class="mb-4">
+
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Escribenos...</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Buscas un producto que no viste en esta pagina?
+                tenes dudas
+                o consultas?</p>
+
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Tu nombre</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Email de contacto</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Escribi tu mensaje</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                    <label for="message">Horario de Atencion al publico: De 08:00 a 16:00
+                                        hs</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108722.54716827636!2d-60.776297602783636!3d-31.617977402125998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe!5e0!3m2!1ses-419!2sar!4v1663649078279!5m2!1ses-419!2sar"
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </section>
+    </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

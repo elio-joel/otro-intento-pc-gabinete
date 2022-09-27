@@ -1,0 +1,112 @@
+body {
+    background: $bg-color-uno;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*Inicio de nv y heder*/
+.primario {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-rows: 0.3fr, 1fr, 1fr;
+    grid-template-areas:
+        "logo-tit b-nav b-nav b-nav"
+        "img-vid img-vid img-vid info"
+        "img-vid img-vid img-vid info"
+
+    ;
+}
+
+.logo-tit {
+    grid-area: logo-tit;
+    background: $bg-color-cuatro;
+}
+
+.navbar-rs {
+    grid-area: b-nav;
+    font-size: 1.8vw;
+    background: $bg-color-dos;
+    width: 85vw;
+    justify-content: stretch;
+    align-self: center;
+
+    & a {
+        color: $txt-color-tres;
+        text-align: center;
+        list-style: none;
+        align-self: flex-start;
+
+        &:hover {
+            background: $hv-color-uno;
+        }
+    }
+
+    .nav-link {
+        color: $txt-color-uno;
+
+    }
+}
+
+/*Esta parte es un link con imagenes miniatura de lo que menciona en cada red social*/
+.claseRedes {
+    background-color: $bg-color-cuatro;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 900%;
+    border: 2px solid;
+
+    a i {
+        color: $txt-color-tres;
+    }
+}
+
+.div-up {
+    position: fixed;
+    bottom: 20%;
+    right: 90%;
+    background-color: $bg-color-cuatro;
+    text-decoration: none;
+    margin: 2%;
+    padding: 2%;
+    font-size: 6vw;
+
+    a {
+        color: $txt-color-dos
+    }
+
+    &:hover {
+        background-color: $hv-color-dos;
+    }
+
+}
+
+.div-wp {
+    position: fixed;
+    bottom: 5%;
+    left: 87%;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 0.5%;
+    padding: 0.5%;
+    font-size: 6vw;
+
+    a {
+        color: $txt-color-dos;
+
+        &:hover {
+            background-color: $hv-color-dos;
+        }
+    }
+}
+
+.articleVarios {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+}

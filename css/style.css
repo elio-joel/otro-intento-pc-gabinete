@@ -1,0 +1,377 @@
+/*$bg-color-cinco: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);*/
+/* radial-gradient(circle, rgba(11, 17, 71, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(38, 24, 4, 1) 100%);*/
+body {
+  background: linear-gradient(100deg, #FDBB2D 0%, #3A1C71 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Inicio de nv y heder*/
+.primario {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1fr, 4);
+  grid-template-rows: 0.3fr, 1fr, 1fr;
+  grid-template-areas: "logo-tit b-nav b-nav b-nav" "img-vid img-vid img-vid info" "img-vid img-vid img-vid info";
+}
+
+.logo-tit {
+  grid-area: logo-tit;
+  background: transparent;
+}
+
+.navbar-rs {
+  grid-area: b-nav;
+  font-size: 1.8vw;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  width: 85vw;
+  justify-content: stretch;
+  align-self: center;
+}
+.navbar-rs a {
+  color: rgb(10, 9, 9);
+  text-align: center;
+  list-style: none;
+  align-self: flex-start;
+}
+.navbar-rs a:hover {
+  background: rgb(134, 143, 151);
+}
+.navbar-rs .nav-link {
+  color: black;
+}
+
+/*Esta parte es un link con imagenes miniatura de lo que menciona en cada red social*/
+.claseRedes {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 900%;
+  border: 2px solid;
+}
+.claseRedes a i {
+  color: rgb(10, 9, 9);
+}
+
+.div-up {
+  position: fixed;
+  bottom: 20%;
+  right: 90%;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 2%;
+  padding: 2%;
+  font-size: 6vw;
+}
+.div-up a {
+  color: white;
+}
+.div-up:hover {
+  background-color: rgb(75, 99, 28);
+}
+
+.div-wp {
+  position: fixed;
+  bottom: 5%;
+  left: 87%;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 0.5%;
+  padding: 0.5%;
+  font-size: 6vw;
+}
+.div-wp a {
+  color: white;
+}
+.div-wp a:hover {
+  background-color: rgb(75, 99, 28);
+}
+
+.articleVarios {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.localH {
+  justify-content: center;
+  grid-area: img-vid;
+  margin: 10px;
+  padding: 15px;
+  justify-items: center;
+  font-size: 100vw;
+}
+
+.div-nos {
+  margin: 2px;
+  padding: 5px;
+  background-color: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: info;
+  max-width: 30vw;
+  max-height: 70vw;
+}
+.div-nos img {
+  padding: 5px;
+  max-width: 15vw;
+}
+.div-nos main {
+  padding: 5px;
+  font-size: 1.4vw;
+  color: rgb(10, 9, 9);
+}
+
+/* Especificamene esta es la parte principal de la pagina ya que aqui se econtraria el catalogo de la categoria de productos a la venta*/
+.secProductos {
+  margin: 10px;
+  padding: 15px;
+  gap: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.secProductos a {
+  text-decoration: none;
+  color: black;
+}
+.secProductos:hover {
+  background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+.secProductos .divBazar {
+  background: radial-gradient(circle, rgb(11, 17, 71) 0%, rgb(77, 226, 199) 50%, rgb(7, 4, 38) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s;
+}
+.secProductos .divBazar:hover {
+  transform: scale(1.2);
+}
+.secProductos .divBazar .img-b-r {
+  width: 300px;
+  height: 300px;
+  border-radius: 155px;
+}
+.secProductos .divBazar a {
+  text-decoration: none;
+  color: white;
+}
+.secProductos .divBazar a:hover {
+  transform: scale(1.2);
+  background: rgb(85, 19, 65);
+}
+.secProductos .divDeco {
+  background: radial-gradient(circle, rgb(11, 17, 71) 0%, rgb(77, 226, 199) 50%, rgb(7, 4, 38) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s;
+}
+.secProductos .divDeco:hover {
+  transform: scale(1.2);
+}
+.secProductos .divDeco .img-b-r {
+  width: 300px;
+  height: 300px;
+  border-radius: 155px;
+}
+.secProductos .divDeco a {
+  text-decoration: none;
+  color: white;
+  transition: all 2s;
+}
+.secProductos .divDeco a:hover {
+  background: rgb(85, 19, 65);
+  transform: scale(1.2);
+}
+.secProductos .divHogar {
+  background: radial-gradient(circle, rgb(11, 17, 71) 0%, rgb(77, 226, 199) 50%, rgb(7, 4, 38) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s;
+}
+.secProductos .divHogar:hover {
+  transform: scale(1.2);
+}
+.secProductos .divHogar .img-b-r {
+  width: 300px;
+  height: 300px;
+  border-radius: 155px;
+}
+.secProductos .divHogar a {
+  text-decoration: none;
+  color: white;
+  transition: all 2s;
+}
+.secProductos .divHogar a:hover {
+  background: rgb(85, 19, 65);
+  transform: scale(1.2);
+}
+
+/*Footer */
+footer {
+  margin: 10px;
+  padding: 5px;
+  /*background: $bg-color-uno;
+  height: 45vw;
+  width: 95vw;*/
+  font-size: 2.5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: rgb(10, 9, 9);
+}
+footer iframe {
+  float: left;
+}
+
+/*Empieza el media querie 480px*/
+@media screen and (max-width: 480px) {
+  .primario {
+    margin: 5vw;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 6);
+    grid-template-areas: "logo-tit" "b-nav" "img-vid" "info" "info" "info";
+  }
+  .logo-tit {
+    margin: 10vw;
+    padding: 5vw;
+    justify-content: center;
+    display: inline-block;
+  }
+  .div-nos {
+    align-items: center;
+    /*align-content: center;*/
+    justify-content: center;
+    max-width: 100vw;
+    max-height: 70vw;
+  }
+  .div-nos div div {
+    text-align: center;
+  }
+  .div-nos main {
+    font-size: medium;
+  }
+  .localH {
+    max-width: 100vw;
+    max-height: 70vw;
+  }
+  .claseRedes {
+    margin: 2vw;
+    padding: 0.5vh;
+    font-size: 15vw;
+  }
+  .secProductos {
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    padding: 5px;
+    gap: 10px;
+  }
+  .divBazar img {
+    max-width: 60vw;
+  }
+  .articleVarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    width: fit-content;
+    font-size: 2.5vw;
+  }
+  footer div {
+    justify-content: center;
+    font-size: 2.5vw;
+  }
+  footer iframe {
+    justify-content: center;
+  }
+}
+/*Empieza el media querie 768px que solo lo estaba usando para ponerme a prueba con algunos codigos*/
+@media screen and (max-width: 768px) {
+  .primario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 6);
+    grid-template-areas: "logo-tit" "b-nav" "img-vid" "info" "info" "info";
+  }
+  .logo-tit {
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    display: inline-block;
+  }
+  .div-wp {
+    font-size: 300%;
+    bottom: 1%;
+    left: 82%;
+  }
+  .navLinks {
+    margin: 3px;
+    padding: 2px;
+    justify-content: center;
+  }
+  .claseRedes {
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+  }
+  .localH div {
+    margin: 0.5px;
+    padding: 0.5px;
+    justify-content: center;
+  }
+  .secProductos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px;
+    padding: 5px;
+    gap: 10px;
+  }
+  .articleVarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .div-up {
+    position: fixed;
+    bottom: 5px;
+    left: 19px;
+    font-size: 40px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer p {
+    font-size: 4vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
