@@ -172,17 +172,12 @@
 
     }
 
-    /*.claseRedes {
-        margin: 0;
-        padding: 0;
-        font-size: 70px;
-    }*/
-
     .secProductos {
 
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin: 3px;
         padding: 5px;
         gap: 10px;
