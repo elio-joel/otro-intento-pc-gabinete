@@ -14,15 +14,15 @@ body {
 .primario {
     align-items: center;
     align-content: center;
-    display: grid;
-    grid-template-columns: repeat(1fr, 3);
+    /*display: grid;
+    grid-template-columns: 0.5fr, 1fr, 1fr;
     grid-template-rows: 0.5fr, 1fr, 1fr;
     grid-template-areas:
         "logo-tit b-nav b-nav"
-        "img-vid img-vid info-uno"
-        "img-vid img-vid info-dos"
+        ". info-dos info-dos"
+        ". info-uno img-vid"
 
-    ;
+    ;*/
 }
 
 .logo-tit {
@@ -31,6 +31,8 @@ body {
 }
 
 .navbar-rs {
+    display: flex;
+    flex-direction: row;
     grid-area: b-nav;
     font-size: 1.8vw;
     background: $bg-color-dos;

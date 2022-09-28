@@ -37,15 +37,15 @@
 
 /* Especificamene esta es la parte principal de la pagina ya que aqui se econtraria el catalogo de la categoria de productos a la venta*/
 .secProductos {
-    margin: 10px;
-    padding: 15px;
+    margin: map-get($catprod , marg);
+    padding: map-get($catprod , padd);
     gap: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: map-get($catprod , display-f);
+    flex-direction: map-get($catprod , flex-drow);
+    justify-content: map-get($catprod , jus-cont-sa);
 
     a {
-        text-decoration: none;
+        text-decoration: map-get($catprod , txt-d);
         color: $txt-color-uno;
 
     }
@@ -58,28 +58,28 @@
 
     .divBazar {
         background: $bg-color-cinco;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: all 2s;
+        display: map-get($catprod , display-f);
+        flex-direction: map-get($catprod , flex-dcol);
+        align-items: map-get($catprod , al-items);
+        transition: map-get($catprod , trtion);
 
         &:hover {
-            transform: scale(1.2);
+            transform: map-get($catprod , trform);
         }
 
         .img-b-r {
-            width: 300px;
-            height: 300px;
-            border-radius: 155px;
+            width: map-get($catprod , img-width);
+            height: map-get($catprod , img--height);
+            border-radius: map-get($catprod , b-radius);
         }
 
         a {
-            text-decoration: none;
+            text-decoration: map-get($catprod , txt-d);
             color: $txt-color-dos;
 
 
             &:hover {
-                transform: scale(1.2);
+                transform: map-get($catprod , trform);
                 background: $bg-color-tres;
 
             }
@@ -88,58 +88,59 @@
 
     .divDeco {
         background: $bg-color-cinco;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: all 2s;
+        display: map-get($catprod , display-f);
+        flex-direction: map-get($catprod , flex-dcol);
+        align-items: map-get($catprod , al-items);
+        transition: map-get($catprod , trtion);
 
         &:hover {
-            transform: scale(1.2);
+            transform: map-get($catprod , trform);
         }
 
         .img-b-r {
-            width: 300px;
-            height: 300px;
-            border-radius: 155px;
+            width: map-get($catprod , img-width);
+            height: map-get($catprod , img--height);
+            border-radius: map-get($catprod , b-radius);
         }
 
         a {
-            text-decoration: none;
+            text-decoration: map-get($catprod , txt-d);
             color: $txt-color-dos;
-            transition: all 2s;
+
 
             &:hover {
+                transform: map-get($catprod , trform);
                 background: $bg-color-tres;
-                transform: scale(1.2);
+
             }
         }
     }
-
     .divHogar {
         background: $bg-color-cinco;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: all 2s;
+        display: map-get($catprod , display-f);
+        flex-direction: map-get($catprod , flex-dcol);
+        align-items: map-get($catprod , al-items);
+        transition: map-get($catprod , trtion);
 
         &:hover {
-            transform: scale(1.2);
+            transform: map-get($catprod , trform);
         }
 
         .img-b-r {
-            width: 300px;
-            height: 300px;
-            border-radius: 155px;
+            width: map-get($catprod , img-width);
+            height: map-get($catprod , img--height);
+            border-radius: map-get($catprod , b-radius);
         }
 
         a {
-            text-decoration: none;
+            text-decoration: map-get($catprod , txt-d);
             color: $txt-color-dos;
-            transition: all 2s;
+
 
             &:hover {
+                transform: map-get($catprod , trform);
                 background: $bg-color-tres;
-                transform: scale(1.2);
+
             }
         }
     }

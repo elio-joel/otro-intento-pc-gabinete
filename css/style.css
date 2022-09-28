@@ -14,10 +14,15 @@ body {
 .primario {
   align-items: center;
   align-content: center;
-  display: grid;
-  grid-template-columns: repeat(1fr, 3);
+  /*display: grid;
+  grid-template-columns: 0.5fr, 1fr, 1fr;
   grid-template-rows: 0.5fr, 1fr, 1fr;
-  grid-template-areas: "logo-tit b-nav b-nav" "img-vid img-vid info-uno" "img-vid img-vid info-dos";
+  grid-template-areas:
+      "logo-tit b-nav b-nav"
+      ". info-dos info-dos"
+      ". info-uno img-vid"
+
+  ;*/
 }
 
 .logo-tit {
@@ -26,6 +31,8 @@ body {
 }
 
 .navbar-rs {
+  display: flex;
+  flex-direction: row;
   grid-area: b-nav;
   font-size: 1.8vw;
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
@@ -185,11 +192,10 @@ body {
 .secProductos .divDeco a {
   text-decoration: none;
   color: white;
-  transition: all 2s;
 }
 .secProductos .divDeco a:hover {
-  background: rgb(85, 19, 65);
   transform: scale(1.2);
+  background: rgb(85, 19, 65);
 }
 .secProductos .divHogar {
   background: radial-gradient(circle, rgb(11, 17, 71) 0%, rgb(77, 226, 199) 50%, rgb(7, 4, 38) 100%);
@@ -209,11 +215,10 @@ body {
 .secProductos .divHogar a {
   text-decoration: none;
   color: white;
-  transition: all 2s;
 }
 .secProductos .divHogar a:hover {
-  background: rgb(85, 19, 65);
   transform: scale(1.2);
+  background: rgb(85, 19, 65);
 }
 
 /*Footer */
