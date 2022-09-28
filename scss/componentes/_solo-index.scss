@@ -1,34 +1,36 @@
 .localH {
-    overflow: hidden;
     grid-area: img-vid;
     margin: 10px;
     padding: 15px;
-    
-    
-    & div {
-        float:none;
-    }
+    /*width: fit-content;*/
 }
 
 
+
 .div-nos {
-    overflow: hidden;  
     margin: 2px;
     padding: 5px;
     background-color: $bg-color-seis;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    grid-area: info;
-    max-height: min-content;
+    text-align: center;
+    height: min-content;
+
+    & p {
+        grid-area: info-uno;
+        font-size: large;
+    }
 
     & img {
-        padding: 5px;        
-        max-width: 15vw;
-    }
-    & main {
+        font-size: small;
         padding: 5px;
-        font-size: 2vw;
+        width:15vw ;
+    }
+
+    & main {
+        grid-area: info-dos;
+        padding: 5px;
+        font-size:large;
         color: $txt-color-tres;
     }
 }
@@ -39,7 +41,8 @@
     padding: 15px;
     gap: 40px;
     display: flex;
-    justify-content:space-around;
+    flex-direction: row;
+    justify-content: space-around;
 
     a {
         text-decoration: none;
