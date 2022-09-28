@@ -12,15 +12,15 @@ body {
 
 /*Inicio de nv y heder*/
 .primario {
-    float: none;
     align-items: center;
+    align-content: center;
     display: grid;
-    grid-template-columns: repeat(1fr, 4);
-    grid-template-rows: 0.3fr, 1fr, 1fr;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: 0.5fr, 1fr, 1fr;
     grid-template-areas:
-        "logo-tit b-nav b-nav b-nav"
-        "img-vid img-vid img-vid info"
-        "img-vid img-vid img-vid info"
+        "logo-tit b-nav b-nav"
+        "img-vid img-vid info-uno"
+        "img-vid img-vid info-dos"
 
     ;
 }
