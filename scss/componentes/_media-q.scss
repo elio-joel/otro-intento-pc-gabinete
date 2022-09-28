@@ -1,5 +1,5 @@
 /*Empieza el media querie 480px*/
-@media (min-width: 480px) and (max-width: 677.9px) {
+@media (min-width: 480px) and (max-width: 767.9px) {
     * {
         box-sizing: content-box;
     }
@@ -118,19 +118,16 @@
     * {
         box-sizing:border-box;
     }
-    /*.primario {
+    .primario {
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(1fr, 6);
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: repeat(1fr, 4);
         grid-template-areas:
-            "logo-tit"
-            "b-nav"
-            "info-uno"
-            "info-dos"
-            "img-vid"
-            "img-vid"
+            "logo-tit b-nav"
+            "img-vid info-uno"
+            "img-vid info-dos"
 
         ;
     }
@@ -152,7 +149,7 @@
         margin: 3px;
         padding: 2px;
         justify-content: center;
-    }*/
+    }
 
     .localH {
         max-width: fit-content;
@@ -179,7 +176,7 @@
         margin: 0;
         padding: 0;
         font-size: 70px;
-    }
+    }*/
 
     .secProductos {
 
@@ -189,6 +186,9 @@
         margin: 3px;
         padding: 5px;
         gap: 10px;
+        width: fit-content;
+        height: fit-content ;
+        font-size: xx-large;
 
     }
 
@@ -199,7 +199,7 @@
         margin: 10px;
         padding: 10px;
 
-    }*/
+    }
 
     .div-up {
         position: fixed;
