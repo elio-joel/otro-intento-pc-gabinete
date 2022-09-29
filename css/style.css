@@ -238,6 +238,10 @@ footer iframe {
     justify-content: center;
     display: inline-block;
   }
+  h1 {
+    margin: 5px;
+    padding: 2px;
+  }
   .localH {
     margin: 10vw;
     padding: 5vw;
@@ -305,9 +309,6 @@ footer iframe {
   footer {
     display: flex;
     flex-direction: column;
-    /*& .row {
-        width: fit-content;
-    }*/
   }
   footer iframe {
     float: none;
