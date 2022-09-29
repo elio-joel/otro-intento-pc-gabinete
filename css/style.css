@@ -75,7 +75,7 @@ body {
   text-decoration: none;
   margin: 2%;
   padding: 2%;
-  font-size: 6vw;
+  font-size: 10vw;
 }
 .div-up a {
   color: white;
@@ -89,7 +89,7 @@ body {
   text-decoration: none;
   margin: 0.5%;
   padding: 0.5%;
-  font-size: 6vw;
+  font-size: 10vw;
 }
 .div-wp a {
   color: white;
@@ -109,8 +109,6 @@ body {
   margin: 10px;
   padding: 15px;
   width: 50em;
-  text-align: center;
-  /*width: fit-content;*/
 }
 
 .div-nos {
@@ -248,8 +246,7 @@ footer iframe {
   .localH {
     margin: 10vw;
     padding: 5vw;
-    max-width: fit-content;
-    max-height: fit-content;
+    width: 24em;
   }
   .div-nos {
     align-items: center;
@@ -259,6 +256,7 @@ footer iframe {
   }
   .div-nos .row {
     --bs-gutter-x: 0.1rem;
+    justify-content: space-around;
   }
   .div-nos div div {
     text-align: center;
@@ -312,6 +310,12 @@ footer iframe {
   footer {
     display: flex;
     flex-direction: column;
+    /*& .row {
+        width: fit-content;
+    }*/
+  }
+  footer iframe {
+    float: none;
   }
 }
 /*Empieza el media querie 768px que solo lo estaba usando para ponerme a prueba con algunos codigos*/
@@ -349,10 +353,12 @@ footer iframe {
     justify-content: center;
   }
   .localH {
-    max-width: fit-content;
-    max-height: fit-content;
+    width: 30em;
     margin: 0.5px;
     padding: 0.5px;
+  }
+  .localH .div-carousel {
+    right: -19vw;
   }
   .div-nos {
     align-items: center;

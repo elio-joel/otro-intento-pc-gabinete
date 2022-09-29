@@ -32,8 +32,8 @@
     .localH {
         margin: 10vw;
         padding: 5vw;
-        max-width: fit-content;
-        max-height: fit-content;
+        width: 24em;
+        
 
     }
 
@@ -43,9 +43,11 @@
         padding-right: 0%;
         padding-left: 0%;
 
-        .row{
+        .row {
             --bs-gutter-x: 0.1rem;
+            justify-content: space-around;
         }
+
         div div {
             text-align: center;
         }
@@ -118,6 +120,14 @@
     footer {
         display: flex;
         flex-direction: column;
+
+        /*& .row {
+            width: fit-content;
+        }*/
+
+        & iframe {
+            float: none;
+        }
     }
 }
 
@@ -161,10 +171,15 @@
     }
 
     .localH {
-        max-width: fit-content;
-        max-height: fit-content;
+
+        width: 30em;
         margin: 0.5px;
         padding: 0.5px;
+
+        & .div-carousel {
+
+            right: -19vw;
+        }
 
     }
 
