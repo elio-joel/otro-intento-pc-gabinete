@@ -1,8 +1,6 @@
 /*Empieza el media querie 480px*/
 @media (min-width: 480px) and (max-width: 767.9px) {
-    * {
-        box-sizing: content-box;
-    }
+    
 
     .primario {
         margin: 5vw;
@@ -30,6 +28,7 @@
     }
 
     .localH {
+
         margin: 10vw;
         padding: 5vw;
         width: 24em;
