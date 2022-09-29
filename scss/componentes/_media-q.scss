@@ -10,7 +10,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-template-columns: 1fr;
+        /*grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr, 6);
         grid-template-areas:
             "logo-tit"
@@ -19,7 +19,7 @@
             "info-dos"
             "img-vid"
             "img-vid"
-        ;
+        ;*/
     }
 
     .logo-tit {
@@ -36,11 +36,16 @@
         max-height: fit-content;
 
     }
+
     .div-nos {
         align-items: center;
         justify-content: center;
-        
+        padding-right: 0%;
+        padding-left: 0%;
 
+        .row{
+            --bs-gutter-x: 0.1rem;
+        }
         div div {
             text-align: center;
         }
@@ -110,26 +115,30 @@
 
     }
 
-    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /*Empieza el media querie 768px que solo lo estaba usando para ponerme a prueba con algunos codigos*/
 @media (min-width: 768px) and (max-width: 991.98px) {
     * {
-        box-sizing:border-box;
+        box-sizing: border-box;
     }
+
     .primario {
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-template-columns: 1fr, 1fr;
+        /*grid-template-columns: 1fr, 1fr;
         grid-template-rows: repeat(1fr, 4);
         grid-template-areas:
             "logo-tit b-nav"
             "img-vid info-uno"
             "img-vid info-dos"
 
-        ;
+        ;*/
     }
 
     .logo-tit {
@@ -180,9 +189,6 @@
         justify-content: center;
         margin: 3px;
         padding: 5px;
-        gap: 10px;
-        width: fit-content;
-        height: fit-content ;
         font-size: xx-large;
 
     }

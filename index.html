@@ -17,95 +17,92 @@
 
 <body>
     <div class="primario">
-        
-
-        <div class="navbar-rs">
-            <header class="logo-tit" id="arriba">
-                <h1>
-                    <img src="./local/logo.jpg" alt="Logo-home-store">
-                    <p>HomeStore</p>
-    
-                </h1>
-            </header>
-            <nav class="navbar navbar-expand-md">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <i class="fa-sharp fa-solid fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="#home">Home</a>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#productos">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#redesSociales">Redes Sociales</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contacto">Contacto</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+        <header class="logo-tit" id="arriba">
+            <h1>
+                <img src="./local/logo.jpg" alt="Logo-home-store">
+                <p>HomeStore</p>
+            </h1>
+            <div class="navbar-rs">
+                <nav class="navbar navbar-expand-md">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-sharp fa-solid fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#home">Home</a>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#productos">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#redesSociales">Redes Sociales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contacto">Contacto</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
                     </div>
+                </nav>
+        </header>
+    </div>
+    <!--Este es el inicio-->
+    <div class="localH col-9 col-md-12" id="home">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner carousel-img">
+                <div class="carousel-item active" data-bs-interval="2500">
+                    <img src="./local/imagen-salon-1.png" class="w-100 " alt="...">
                 </div>
-            </nav>
-        </div>
-        <!--Este es el inicio -->
-        <div class="localH" id="home">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner carousel-img">
-                    <div class="carousel-item active" data-bs-interval="2500">
-                        <img src="./local/imagen-salon-1.png" class="d-block w-85" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2500">
-                        <img src="./local/imagen-salon-2.png" class="d-block w-85" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2500">
-                        <img src="./local/imagen-salon-3.png" class="d-block w-85" alt="...">
-                    </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./local/imagen-salon-2.png" class="w-100" alt="...">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        <section class="div-nos" id="nosotros">
-            <div class="row">
-                <div class="row-12 col-md-12col-sm-12">
-                    <p class="texto-wp"> Visitanos de lunes a viernes de 08:00 a 13:00 hs. y los dias Sabados de 09:00 a
-                        14 hs. Tambien podes realizar tu pedido por WhatsApp haciendo click aca
-                        !</p>
-                    <a href="https://web.whatsapp.com/" target="_blank"><img src="./local/giphy.gif"></a>
-                    <main>Somos una empresa nacida en la Ciudad de Santa Fe, con alcance nacional ya que
-                        brindamos
-                        envios a todo el pais. Tenemos amplia variedad en productos como: equipos de mates
-                        completos,
-                        adornos decorativos, articulos de perfumeria para el hogar como difusores, palo
-                        santo y mas...
-                        Tambien contamos con articulos de perfumeria y limpieza para autos. Hacemos grabados
-                        en mates
-                        personalizados de la forma que quieras, lamparas de sal, porta sahumerio y mas. Te
-                        invitamos a
-                        recorres nuestras secciones de productos aqui debajo.
-                    </main>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./local/imagen-salon-3.png" class="w-100" alt="...">
                 </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <section class="div-nos" id="nosotros">
+        <div class="row">
+            <div class="col-9 col-md-12 col-xs-6">
+                <p class="texto-wp"> Visitanos de lunes a viernes de 08:00 a 13:00 hs. y los dias Sabados de 09:00 a
+                    14 hs. Tambien podes realizar tu pedido por WhatsApp haciendo click aca
+                    !</p>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="./local/giphy.gif"></a>
+                <main>Somos una empresa nacida en la Ciudad de Santa Fe, con alcance nacional ya que
+                    brindamos
+                    envios a todo el pais. Tenemos amplia variedad en productos como: equipos de mates
+                    completos,
+                    adornos decorativos, articulos de perfumeria para el hogar como difusores, palo
+                    santo y mas...
+                    Tambien contamos con articulos de perfumeria y limpieza para autos. Hacemos grabados
+                    en mates
+                    personalizados de la forma que quieras, lamparas de sal, porta sahumerio y mas. Te
+                    invitamos a
+                    recorres nuestras secciones de productos aqui debajo.
+                </main>
+            </div>
+        </div>
+    </section>
     </div>
 
 
@@ -143,87 +140,87 @@
     </div> -->
 
     <footer class="pie-inf" id="contacto">
-    <div class="form-contact">
-        <section class="mb-4 sec-pie">
+        <div class="form-contact">
+            <section class="mb-4 sec-pie">
 
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Escribenos...</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Buscas un producto que no viste en esta pagina?
-                tenes dudas
-                o consultas?</p>
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Escribenos...</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">Buscas un producto que no viste en esta pagina?
+                    tenes dudas
+                    o consultas?</p>
 
-            <div class="row">
+                <div class="row">
 
-                <!--Grid column-->
-                <div class="col-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <!--Grid column-->
+                    <div class="col-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-                        <!--Grid row-->
-                        <div class="row">
+                            <!--Grid row-->
+                            <div class="row">
 
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="">Tu nombre</label>
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Tu nombre</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Email de contacto</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Escribi tu mensaje</label>
+                                    </div>
                                 </div>
                             </div>
-                            <!--Grid column-->
 
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Email de contacto</label>
+                            <div class="row">
+
+
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Horario de Atencion al publico: De 08:00 a 16:00
+                                            hs</label>
+                                    </div>
+
                                 </div>
                             </div>
-                            <!--Grid column-->
 
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary"
+                                onclick="document.getElementById('contact-form').submit();">Send</a>
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    <label for="subject" class="">Escribi tu mensaje</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-
-
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2"
-                                        class="form-control md-textarea"></textarea>
-                                    <label for="message">Horario de Atencion al publico: De 08:00 a 16:00
-                                        hs</label>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                    </form>
-
-                    <div class="text-center text-md-left">
-                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                        <div class="status"></div>
                     </div>
-                    <div class="status"></div>
                 </div>
-                <div class="col-3 pie-if">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108722.54716827636!2d-60.776297602783636!3d-31.617977402125998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe!5e0!3m2!1ses-419!2sar!4v1663649078279!5m2!1ses-419!2sar"
-                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-        </section>
-    </div>
+            </section>
+        </div>
+        <iframe class="col-12 pie-if"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108722.54716827636!2d-60.776297602783636!3d-31.617977402125998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe!5e0!3m2!1ses-419!2sar!4v1663649078279!5m2!1ses-419!2sar"
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </footer>
 

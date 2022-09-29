@@ -2,9 +2,10 @@
     grid-area: img-vid;
     margin: 10px;
     padding: 15px;
+    width: 50em;
+    text-align: center;
     /*width: fit-content;*/
 }
-
 
 
 .div-nos {
@@ -24,13 +25,13 @@
     & img {
         font-size: small;
         padding: 5px;
-        width:15vw ;
+        width: 15vw;
     }
 
     & main {
         grid-area: info-dos;
         padding: 5px;
-        font-size:large;
+        font-size: large;
         color: $txt-color-tres;
     }
 }
@@ -57,11 +58,7 @@
 
 
     .divBazar {
-        background: $bg-color-cinco;
-        display: map-get($catprod , display-f);
-        flex-direction: map-get($catprod , flex-dcol);
-        align-items: map-get($catprod , al-items);
-        transition: map-get($catprod , trtion);
+        @extend %valoresgral;
 
         &:hover {
             transform: map-get($catprod , trform);
@@ -87,11 +84,7 @@
     }
 
     .divDeco {
-        background: $bg-color-cinco;
-        display: map-get($catprod , display-f);
-        flex-direction: map-get($catprod , flex-dcol);
-        align-items: map-get($catprod , al-items);
-        transition: map-get($catprod , trtion);
+        @extend %valoresgral;
 
         &:hover {
             transform: map-get($catprod , trform);
@@ -115,12 +108,9 @@
             }
         }
     }
+
     .divHogar {
-        background: $bg-color-cinco;
-        display: map-get($catprod , display-f);
-        flex-direction: map-get($catprod , flex-dcol);
-        align-items: map-get($catprod , al-items);
-        transition: map-get($catprod , trtion);
+        @extend %valoresgral;
 
         &:hover {
             transform: map-get($catprod , trform);

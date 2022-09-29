@@ -1,12 +1,21 @@
 /*$bg-color-cinco: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);*/
 /* radial-gradient(circle, rgba(11, 17, 71, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(38, 24, 4, 1) 100%);*/
+.secProductos .divHogar, .secProductos .divDeco, .secProductos .divBazar {
+  background: radial-gradient(circle, rgb(11, 17, 71) 0%, rgb(77, 226, 199) 50%, rgb(7, 4, 38) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(100deg, #FDBB2D 0%, #3A1C71 100%);
+  background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,18 +23,10 @@ body {
 .primario {
   align-items: center;
   align-content: center;
-  /*display: grid;
-  grid-template-columns: 0.5fr, 1fr, 1fr;
-  grid-template-rows: 0.5fr, 1fr, 1fr;
-  grid-template-areas:
-      "logo-tit b-nav b-nav"
-      ". info-dos info-dos"
-      ". info-uno img-vid"
-
-  ;*/
 }
 
 .logo-tit {
+  display: flex;
   grid-area: logo-tit;
   background: transparent;
 }
@@ -35,7 +36,7 @@ body {
   flex-direction: row;
   grid-area: b-nav;
   font-size: 1.8vw;
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  background: linear-gradient(100deg, #FDBB2D 0%, #3A1C71 100%);
   width: fit-content;
   justify-content: stretch;
   align-self: center;
@@ -107,6 +108,8 @@ body {
   grid-area: img-vid;
   margin: 10px;
   padding: 15px;
+  width: 50em;
+  text-align: center;
   /*width: fit-content;*/
 }
 
@@ -151,13 +154,6 @@ body {
 .secProductos:hover {
   background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
 }
-.secProductos .divBazar {
-  background: radial-gradient(circle, rgb(11, 17, 71) 0%, rgb(77, 226, 199) 50%, rgb(7, 4, 38) 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 2s;
-}
 .secProductos .divBazar:hover {
   transform: scale(1.2);
 }
@@ -174,13 +170,6 @@ body {
   transform: scale(1.2);
   background: rgb(85, 19, 65);
 }
-.secProductos .divDeco {
-  background: radial-gradient(circle, rgb(11, 17, 71) 0%, rgb(77, 226, 199) 50%, rgb(7, 4, 38) 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 2s;
-}
 .secProductos .divDeco:hover {
   transform: scale(1.2);
 }
@@ -196,13 +185,6 @@ body {
 .secProductos .divDeco a:hover {
   transform: scale(1.2);
   background: rgb(85, 19, 65);
-}
-.secProductos .divHogar {
-  background: radial-gradient(circle, rgb(11, 17, 71) 0%, rgb(77, 226, 199) 50%, rgb(7, 4, 38) 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 2s;
 }
 .secProductos .divHogar:hover {
   transform: scale(1.2);
@@ -226,8 +208,6 @@ footer {
   margin: 10px;
   padding: 5px;
   font-size: 2.5vw;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 footer p {
@@ -248,9 +228,16 @@ footer iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-template-columns: 1fr;
+    /*grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, 6);
-    grid-template-areas: "logo-tit" "b-nav" "info-uno" "info-dos" "img-vid" "img-vid";
+    grid-template-areas:
+        "logo-tit"
+        "b-nav"
+        "info-uno"
+        "info-dos"
+        "img-vid"
+        "img-vid"
+    ;*/
   }
   .logo-tit {
     margin: 10vw;
@@ -267,6 +254,11 @@ footer iframe {
   .div-nos {
     align-items: center;
     justify-content: center;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+  .div-nos .row {
+    --bs-gutter-x: 0.1rem;
   }
   .div-nos div div {
     text-align: center;
@@ -317,6 +309,10 @@ footer iframe {
     margin: 10px;
     padding: 10px;
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /*Empieza el media querie 768px que solo lo estaba usando para ponerme a prueba con algunos codigos*/
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -327,9 +323,14 @@ footer iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-template-columns: 1fr, 1fr;
+    /*grid-template-columns: 1fr, 1fr;
     grid-template-rows: repeat(1fr, 4);
-    grid-template-areas: "logo-tit b-nav" "img-vid info-uno" "img-vid info-dos";
+    grid-template-areas:
+        "logo-tit b-nav"
+        "img-vid info-uno"
+        "img-vid info-dos"
+
+    ;*/
   }
   .logo-tit {
     margin: 10vw;
@@ -369,9 +370,6 @@ footer iframe {
     justify-content: center;
     margin: 3px;
     padding: 5px;
-    gap: 10px;
-    width: fit-content;
-    height: fit-content;
     font-size: xx-large;
   }
   .articleVarios {
