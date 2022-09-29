@@ -52,11 +52,7 @@ body {
 /*Esta parte es un link con imagenes miniatura de lo que menciona en cada red social*/
 .claseRedes {
     background-color: $bg-color-cuatro;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 15vw;
-    border: 2px solid;
+    @include mixredes();
 
     a i {
         color: $txt-color-tres;

@@ -1,0 +1,7 @@
+@mixin mixredes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 15vw;
+    border: 2px solid;
+}
