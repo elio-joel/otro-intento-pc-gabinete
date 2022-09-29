@@ -142,6 +142,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  text-align: center;
 }
 .secProductos a {
   text-decoration: none;
@@ -163,7 +164,6 @@ body {
   color: white;
 }
 .secProductos .divBazar a:hover {
-  transform: scale(1.2);
   background: rgb(85, 19, 65);
 }
 .secProductos .divDeco:hover {
@@ -179,7 +179,6 @@ body {
   color: white;
 }
 .secProductos .divDeco a:hover {
-  transform: scale(1.2);
   background: rgb(85, 19, 65);
 }
 .secProductos .divHogar:hover {
@@ -195,7 +194,6 @@ body {
   color: white;
 }
 .secProductos .divHogar a:hover {
-  transform: scale(1.2);
   background: rgb(85, 19, 65);
 }
 

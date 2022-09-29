@@ -43,6 +43,7 @@
     display: map-get($catprod , display-f);
     flex-direction: map-get($catprod , flex-drow);
     justify-content: map-get($catprod , jus-cont-sa);
+    text-align: center;
 
     a {
         text-decoration: map-get($catprod , txt-d);
@@ -75,7 +76,6 @@
 
 
             &:hover {
-                transform: map-get($catprod , trform);
                 background: $bg-color-tres;
 
             }
@@ -101,7 +101,6 @@
 
 
             &:hover {
-                transform: map-get($catprod , trform);
                 background: $bg-color-tres;
 
             }
@@ -127,7 +126,6 @@
 
 
             &:hover {
-                transform: map-get($catprod , trform);
                 background: $bg-color-tres;
 
             }
