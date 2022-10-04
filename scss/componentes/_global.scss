@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +14,7 @@ body {
 .primario {
     align-items: center;
     align-content: center;
+    background-color: #aaaa8a;
 }
 
 .logo-tit {
@@ -27,7 +28,7 @@ body {
     flex-direction: row;
     grid-area: b-nav;
     font-size: 1.8vw;
-    background: $bg-color-uno;
+    background: #aaaa8a;
     width: fit-content;
     justify-content: stretch;
     align-self: center;
@@ -47,6 +48,41 @@ body {
         color: $txt-color-uno;
 
     }
+
+    .btn {
+        color: whitesmoke;
+        border-color: whitesmoke;
+        transition: none;
+
+        a {
+            text-decoration: map-get($catprod , txt-d);
+            color: $txt-color-uno;
+
+        }
+
+        &:hover {
+            background: $bg-color-seis;
+
+        }
+    }
+
+    .btn-check:focus &:focus {
+        box-shadow: none;
+        color: brown;
+        transition: none;
+    }
+
+    a:focus {
+        outline: none;
+        color: brown;
+        transition: none;
+    }
+
+    &.navbar-toggler:focus {
+        outline: none !important;
+        box-shadow: none;
+        transition: none;
+    }
 }
 
 /*Esta parte es un link con imagenes miniatura de lo que menciona en cada red social*/
@@ -61,36 +97,34 @@ body {
 
 .div-up {
     position: fixed;
-    bottom: 25vw;
-    right: 88vw;
+    bottom: 30vw;
+    left: 86vw;
     background-color: $bg-color-cuatro;
     text-decoration: none;
     margin: 2%;
     padding: 2%;
-    font-size: 10vw;
+    font-size: 9vw;
 
     a {
-        color: $txt-color-dos
+        color: $txt-color-uno;
     }
 
-    
+
 
 }
 
 .div-wp {
     position: fixed;
-    bottom: 25vw;
-    left: 87vw;
-    background-color: transparent;
+    bottom: 18vw;
+    left: 86vw;
+    background-color: $bg-color-cuatro;
     text-decoration: none;
-    margin: 0.5%;
-    padding: 0.5%;
-    font-size: 10vw;
+    margin: 2vw;
+    padding: 2vw;
+    font-size: 9vw;
 
     a {
-        color: $txt-color-dos;
-
-    
+        color: $txt-color-uno;
     }
 }
 
