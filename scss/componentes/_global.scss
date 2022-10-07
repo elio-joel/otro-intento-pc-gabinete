@@ -21,6 +21,7 @@ body {
     display: flex;
     grid-area: logo-tit;
     background: $bg-color-cuatro;
+    justify-content: space-evenly;
 }
 
 .navbar-rs {

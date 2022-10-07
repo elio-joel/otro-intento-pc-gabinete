@@ -28,6 +28,7 @@ body {
   display: flex;
   grid-area: logo-tit;
   background: transparent;
+  justify-content: space-evenly;
 }
 
 .navbar-rs {
@@ -138,9 +139,9 @@ h1 {
 
 .localH {
   grid-area: img-vid;
-  margin: 10px;
-  padding: 15px;
-  width: 45em;
+  margin: 5px;
+  padding: 10px;
+  width: auto;
 }
 
 .div-nos {
@@ -151,6 +152,7 @@ h1 {
   flex-direction: column;
   text-align: center;
   height: min-content;
+  width: 100%;
 }
 .div-nos p {
   grid-area: info-uno;
@@ -242,10 +244,8 @@ footer {
 footer p {
   color: rgb(10, 9, 9);
 }
-footer.div-ifr {
-  float: right;
-  justify-content: center;
-  align-items: center;
+footeriframe {
+  width: 100%;
 }
 
 /*Empieza el media querie 480px*/
@@ -263,9 +263,9 @@ footer.div-ifr {
     font-size: medium;
   }
   .localH {
-    margin: 10vw;
-    padding: 5vw;
-    width: 27em;
+    margin: 2px;
+    padding: 2px;
+    width: auto;
   }
   .div-nos {
     align-items: center;
@@ -325,6 +325,10 @@ footer.div-ifr {
     align-items: center;
     margin: 10px;
     padding: 10px;
+    gap: 40px;
+  }
+  .articleVarios section {
+    gap: 30px;
   }
   footer {
     display: flex;
@@ -350,12 +354,9 @@ footer.div-ifr {
     justify-content: center;
   }
   .localH {
-    width: 30em;
+    width: auto;
     margin: 0.5px;
     padding: 0.5px;
-  }
-  .localH .div-carousel {
-    right: -19vw;
   }
   .div-nos {
     align-items: center;
