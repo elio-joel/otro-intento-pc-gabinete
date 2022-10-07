@@ -9,6 +9,7 @@
         flex-direction: column;
         align-items: center;
 
+        .navbar-rs{
 
         & a{
             font-size: large;
@@ -19,6 +20,7 @@
             color: $txt-color-uno;
         }
     }
+}
 
     h1 {
         margin: 2px;

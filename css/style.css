@@ -262,11 +262,11 @@ footeriframe {
     flex-direction: column;
     align-items: center;
   }
-  .primario a {
+  .primario .navbar-rs a {
     font-size: large;
     color: black;
   }
-  .primario ul li a {
+  .primario .navbar-rs ul li a {
     font-size: large;
     color: black;
   }
