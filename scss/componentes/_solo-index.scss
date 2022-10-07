@@ -1,3 +1,5 @@
+
+/*Comienza carousel*/
 .localH {
     grid-area: img-vid;
     margin: 5px;
@@ -6,7 +8,7 @@
     
 }
 
-
+/*seccion sobre nosotros*/
 .div-nos {
     margin: 2px;
     padding: 5px;
@@ -36,7 +38,7 @@
     }
 }
 
-/* Especificamene esta es la parte principal de la pagina ya que aqui se econtraria el catalogo de la categoria de productos a la venta*/
+/* categorias de productos a la venta*/
 .secProductos {
     margin: map-get($catprod , marg);
     padding: map-get($catprod , padd);

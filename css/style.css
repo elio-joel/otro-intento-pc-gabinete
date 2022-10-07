@@ -87,7 +87,7 @@ h1 {
   font-size: medium;
 }
 
-/*Esta parte es un link con imagenes miniatura de lo que menciona en cada red social*/
+/* redes sociales */
 .claseRedes {
   background-color: transparent;
   display: flex;
@@ -100,9 +100,10 @@ h1 {
   color: rgb(10, 9, 9);
 }
 
+/*Botones ir arriba y contacto WSP*/
 .div-up {
   position: fixed;
-  bottom: 30vw;
+  bottom: 28vw;
   left: 86vw;
   background-color: transparent;
   text-decoration: none;
@@ -116,7 +117,7 @@ h1 {
 
 .div-wp {
   position: fixed;
-  bottom: 18vw;
+  bottom: 13vw;
   left: 86vw;
   background-color: transparent;
   text-decoration: none;
@@ -128,6 +129,7 @@ h1 {
   color: black;
 }
 
+/* Seccion articulos varios que solo no se muestra en index*/
 .articleVarios {
   margin: 20px;
   padding: 20px;
@@ -137,6 +139,7 @@ h1 {
   gap: 35px;
 }
 
+/*Comienza carousel*/
 .localH {
   grid-area: img-vid;
   margin: 5px;
@@ -144,6 +147,7 @@ h1 {
   width: auto;
 }
 
+/*seccion sobre nosotros*/
 .div-nos {
   margin: 2px;
   padding: 5px;
@@ -170,7 +174,7 @@ h1 {
   color: rgb(10, 9, 9);
 }
 
-/* Especificamene esta es la parte principal de la pagina ya que aqui se econtraria el catalogo de la categoria de productos a la venta*/
+/* categorias de productos a la venta*/
 .secProductos {
   margin: 10px;
   padding: 15px;
@@ -248,8 +252,9 @@ footeriframe {
   width: 100%;
 }
 
-/*Empieza el media querie 480px*/
+/*Empieza el media querie 320px*/
 @media (min-width: 320px) and (max-width: 767.9px) {
+  /*comienza nav y header*/
   .primario {
     margin: 2px;
     padding: 1px;
@@ -257,11 +262,15 @@ footeriframe {
     flex-direction: column;
     align-items: center;
   }
+  .primario ul li a {
+    font-size: large;
+  }
   h1 {
     margin: 2px;
     padding: 2px;
     font-size: medium;
   }
+  /*carousel y seccion sobre nosotros*/
   .localH {
     margin: 2px;
     padding: 2px;
@@ -280,6 +289,7 @@ footeriframe {
   .div-nos div div {
     text-align: center;
   }
+  /* Redes Sociales*/
   .claseRedes {
     display: flex;
     flex-direction: row;
@@ -287,6 +297,7 @@ footeriframe {
     margin: 2vw;
     padding: 5vw;
   }
+  /*Seccion productos*/
   .secProductos {
     display: flex;
     flex-direction: column;
@@ -330,6 +341,7 @@ footeriframe {
   .articleVarios section {
     gap: 30px;
   }
+  /*Footer*/
   footer {
     display: flex;
     flex-direction: column;
@@ -338,11 +350,12 @@ footeriframe {
     float: none;
   }
 }
-/*Empieza el media querie 768px que solo lo estaba usando para ponerme a prueba con algunos codigos*/
+/*Empieza el media querie 768px */
 @media (min-width: 768px) and (max-width: 991.98px) {
   * {
     box-sizing: border-box;
   }
+  /*nav y header*/
   .primario {
     display: flex;
     flex-direction: column;
@@ -353,6 +366,7 @@ footeriframe {
     padding: 2px;
     justify-content: center;
   }
+  /*carousel y seccion sobre-nosotros*/
   .localH {
     width: auto;
     margin: 0.5px;
@@ -367,6 +381,7 @@ footeriframe {
   .div-nos div div {
     text-align: center;
   }
+  /*seccion productos*/
   .secProductos {
     display: flex;
     flex-direction: column;
@@ -383,6 +398,7 @@ footeriframe {
     margin: 10px;
     padding: 10px;
   }
+  /*footer*/
   .footer {
     border: 3px solid rgb(85, 19, 65);
     margin: 2px;

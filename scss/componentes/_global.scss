@@ -91,7 +91,7 @@ h1{
     font-size: medium;
 }
 
-/*Esta parte es un link con imagenes miniatura de lo que menciona en cada red social*/
+/* redes sociales */
 .claseRedes {
     background-color: $bg-color-cuatro;
     @include mixredes();
@@ -100,10 +100,10 @@ h1{
         color: $txt-color-tres;
     }
 }
-
+/*Botones ir arriba y contacto WSP*/
 .div-up {
     position: fixed;
-    bottom: 30vw;
+    bottom: 28vw;
     left: 86vw;
     background-color: $bg-color-cuatro;
     text-decoration: none;
@@ -121,7 +121,7 @@ h1{
 
 .div-wp {
     position: fixed;
-    bottom: 18vw;
+    bottom: 13vw;
     left: 86vw;
     background-color: $bg-color-cuatro;
     text-decoration: none;
@@ -133,7 +133,7 @@ h1{
         color: $txt-color-uno;
     }
 }
-
+/* Seccion articulos varios que solo no se muestra en index*/
 .articleVarios {
     margin: 20px;
     padding: 20px;

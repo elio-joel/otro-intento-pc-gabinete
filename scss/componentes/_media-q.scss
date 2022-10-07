@@ -1,7 +1,7 @@
-/*Empieza el media querie 480px*/
+/*Empieza el media querie 320px*/
 @media (min-width: 320px) and (max-width: 767.9px) {
 
-
+    /*comienza nav y header*/
     .primario {
         margin: 2px;
         padding: 1px;
@@ -9,8 +9,11 @@
         flex-direction: column;
         align-items: center;
 
-    }
 
+        & ul li a {
+            font-size: large;
+        }
+    }
 
     h1 {
         margin: 2px;
@@ -18,11 +21,12 @@
         font-size: medium;
     }
 
+    /*carousel y seccion sobre nosotros*/
     .localH {
 
         margin: 2px;
         padding: 2px;
-        width:auto;
+        width: auto;
 
     }
 
@@ -44,6 +48,7 @@
 
     }
 
+    /* Redes Sociales*/
     .claseRedes {
         display: flex;
         flex-direction: row;
@@ -54,6 +59,7 @@
 
     }
 
+    /*Seccion productos*/
     .secProductos {
         display: flex;
         flex-direction: column;
@@ -111,6 +117,7 @@
 
     }
 
+    /*Footer*/
     footer {
         display: flex;
         flex-direction: column;
@@ -122,12 +129,13 @@
     }
 }
 
-/*Empieza el media querie 768px que solo lo estaba usando para ponerme a prueba con algunos codigos*/
+/*Empieza el media querie 768px */
 @media (min-width: 768px) and (max-width: 991.98px) {
     * {
         box-sizing: border-box;
     }
 
+    /*nav y header*/
     .primario {
         display: flex;
         flex-direction: column;
@@ -142,6 +150,7 @@
         justify-content: center;
     }
 
+    /*carousel y seccion sobre-nosotros*/
     .localH {
 
         width: auto;
@@ -164,6 +173,7 @@
 
     }
 
+    /*seccion productos*/
     .secProductos {
 
         display: flex;
@@ -185,7 +195,7 @@
 
     }
 
-
+    /*footer*/
     .footer {
         border: 3px solid $bg-color-tres;
         margin: 2px;
