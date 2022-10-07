@@ -80,6 +80,12 @@ body {
   transition: none;
 }
 
+h1 {
+  margin: 2px;
+  padding: 2px;
+  font-size: medium;
+}
+
 /*Esta parte es un link con imagenes miniatura de lo que menciona en cada red social*/
 .claseRedes {
   background-color: transparent;
@@ -251,14 +257,8 @@ footer.div-ifr {
     flex-direction: column;
     align-items: center;
   }
-  /*.logo-tit {
-      margin: 10vw;
-      padding: 5vw;
-      justify-content: center;
-      display: inline-block;
-  }*/
   h1 {
-    margin: 5px;
+    margin: 2px;
     padding: 2px;
     font-size: medium;
   }
@@ -343,12 +343,6 @@ footer.div-ifr {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .logo-tit {
-    margin: 10vw;
-    padding: 5vw;
-    justify-content: center;
-    display: inline-block;
   }
   .navLinks {
     margin: 3px;
