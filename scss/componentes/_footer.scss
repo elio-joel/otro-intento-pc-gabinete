@@ -4,13 +4,17 @@ footer {
     padding: 5px;
     font-size: 2.5vw;
     justify-content: center;
+    align-items: center;
 
     p {
         color: $txt-color-tres;
         
     }
 
-    iframe {
-        float: left;
+    &.div-ifr {
+        float:right;
+        justify-content: center;
+        align-items: center;
+        
     }
 }
