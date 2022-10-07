@@ -10,8 +10,9 @@
         align-items: center;
 
 
-        & ul li a {
+        &.nav-link{
             font-size: large;
+            color: $txt-color-uno;
         }
     }
 

@@ -262,8 +262,9 @@ footeriframe {
     flex-direction: column;
     align-items: center;
   }
-  .primario ul li a {
+  .primario.nav-link {
     font-size: large;
+    color: black;
   }
   h1 {
     margin: 2px;
