@@ -262,7 +262,11 @@ footeriframe {
     flex-direction: column;
     align-items: center;
   }
-  .primario.nav-link {
+  .primario a {
+    font-size: large;
+    color: black;
+  }
+  .primario ul li a {
     font-size: large;
     color: black;
   }
